@@ -1,5 +1,6 @@
 let filas = parseInt(prompt("Ingrese un numero de filas"));
 let columnas = parseInt(prompt("Ingrese un numero de columnas"));
+let resultado = filas * columnas;
 
 console.log(filas)
 console.log(columnas)
@@ -9,7 +10,8 @@ document.write(`<table class="tabla">
 for(let Ifila = 0; Ifila < filas; Ifila++){
     document.write(`<tr>`)
     for(let Icolumna = 0; Icolumna < columnas; Icolumna++){
-    document.write(`<td>hola</td>`)
+    document.write(`<td>${resultado}</td>`);
+    resultado--;
     }
     document.write(`</tr>`)
 }
