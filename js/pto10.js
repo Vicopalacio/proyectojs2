@@ -5,10 +5,14 @@ console.log(filas)
 console.log(columnas)
 
 document.write(`<table class="tabla">
-        <tbody>
-            <tr>
-                <td>hola</td>
-                <td>mundo</td>
-            </tr>
+        <tbody>`)
+for(let Ifila = 0; Ifila < filas; Ifila++){
+    document.write(`
+        <tr>
+            <td>hola</td>
+            <td>mundo</td>
+        </tr>`)
+}
+document.write(`
         </tbody>
     </table>`)
