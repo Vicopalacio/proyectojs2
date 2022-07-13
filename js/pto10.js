@@ -7,11 +7,11 @@ console.log(columnas)
 document.write(`<table class="tabla">
         <tbody>`)
 for(let Ifila = 0; Ifila < filas; Ifila++){
-    document.write(`
-        <tr>
-            <td>hola</td>
-            <td>mundo</td>
-        </tr>`)
+    document.write(`<tr>`)
+    for(let Icolumna = 0; Icolumna < columnas; Icolumna++){
+    document.write(`<td>hola</td>`)
+    }
+    document.write(`</tr>`)
 }
 document.write(`
         </tbody>
