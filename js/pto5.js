@@ -2,8 +2,14 @@ let dni = parseInt(prompt("Ingrese un dni 0 y 99999999"))
 console.log(dni)
 
 do{
+console.log("hola")
+console.log(isNaN(dni))
 confirm = true;
-if(dni >= 0 && dni <= 99999999){
+if(isNaN(dni)){
+    console.log("texto")
+    alert("Valor erroneo")
+    dni = parseInt(prompt("Repita el numero"))
+}else if(dni >= 0 && dni <= 99999999){
     let resultado = dni % 23;
     switch(resultado){
         case 0:
@@ -97,6 +103,9 @@ if(dni >= 0 && dni <= 99999999){
         case 22:
             document.write("E");
             alert("E");
+        break;
+        case NaN:
+            alert("Valor erroneo")
         break;
         default:
             alert("Valor erroneo")
