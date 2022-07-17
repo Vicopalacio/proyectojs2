@@ -4,8 +4,8 @@
 let texto = prompt("ingrese una frase");
 
 
-if (confirm()=== true){
-    document.write(texto)
-}else {
-    document.write(texto + "-")
-}
+// if (confirm()=== true){
+//     document.write(texto)
+// }else {
+//     document.write(texto + "-")
+// }
